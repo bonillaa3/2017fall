@@ -1,3 +1,6 @@
+const $ = require("jquery");
+require("./main.scss");
+
 $(function(){
     $("#header-placeholder").load("_header.html", function () {
         $("#nav-placeholder").load(navProperties.mainNav, function(){
@@ -6,7 +9,6 @@ $(function(){
         });
     });
 
-    
 
     $(".btn-primary").click(function(){
         $(this).closest(".col-md-4").css({ 'max-width': 'none'})
